@@ -105,7 +105,7 @@ th {
   }
   h1,
   h2 {
-    font-size: 20px;
+    font-size: 15px;
   }
   label {
     margin: 10px 0;
@@ -115,7 +115,10 @@ th {
   input[type="tel"] {
     margin: 0 0 10px;
   }
-
+  .btn {
+    margin-left: 0;
+    font-size: 12px;
+  }
   input[type="text"]#filter {
     width: 50%;
   }
