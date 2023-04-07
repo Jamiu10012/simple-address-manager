@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Address Book Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title-h1">Simple Address Book Manager</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="mobile">Mobile:</label>
+      <input
+        type="tel"
+        id="mobile"
+        name="mobile"
+        pattern="[0-9]{10}"
+        required
+      />
+      <button type="button" onclick="addContact()">Add Contact</button>
+    </form>
+    <hr />
+    <h2>Contact List</h2>
+    <input
+      type="text"
+      id="filter"
+      onkeyup="filterContacts()"
+      placeholder="Filter by Name or Mobile"
+    />
+    <!-- <ul id="contact-list"></ul> -->
+    <table id="contact-table"></table>
+    <div id="edit-form-container" style="display: none">
+      <h2>Edit Contact</h2>
+      <form id="edit-form">
+        <label for="edit-name">Name:</label>
+        <input type="text" id="edit-name" name="edit-name" /><br /><br />
+        <label for="edit-mobile">Mobile:</label>
+        <input
+          type="tel"
+          id="edit-mobile"
+          name="edit-mobile"
+          pattern="[0-9]{10}"
+        /><br /><br />
+        <button id="edit-save-btn">Save</button>
+        <button id="edit-cancel-btn">Cancel</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.title-h1 {
+  margin: 40px 0;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+input[type="text"],
+input[type="tel"] {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  border: 2px solid #4caf50;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  outline: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+input[type="text"]#filter {
+  width: 60%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #4caf50;
+  margin: 0 auto;
+  align-items: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+input[type="text"]#filter:focus {
+  outline: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f6e5e5;
+}

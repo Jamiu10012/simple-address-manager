@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>View Contacts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>View Contacts</h1>
+    <form>
+      <label for="search">Search:</label>
+      <input
+        type="text"
+        id="search"
+        name="search"
+        oninput="filterContacts()"
+      /><br />
+    </form>
+    <table id="contacts-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Mobile Number</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="edit-contact-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <form>
+          <label for="edit-name">Name:</label>
+          <input type="text" id="edit-name" name="name" /><br />
+          <label for="edit-mobile">Mobile Number:</label>
+          <input type="text" id="edit-mobile" name="mobile" /><br />
+          <button type="button">Save</button>
+        </form>
+      </div>
+    </div>
+    <script src="view-contacts.js"></script>
+  </body>
+</html>
