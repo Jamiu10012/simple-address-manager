@@ -103,8 +103,9 @@ th {
   .title-h1 {
     margin: 20px 0;
   }
-  h1 {
-    font-size: 25px;
+  h1,
+  h2 {
+    font-size: 20px;
   }
   label {
     margin: 10px 0;
@@ -113,5 +114,9 @@ th {
   input[type="text"],
   input[type="tel"] {
     margin: 0 0 10px;
+  }
+
+  input[type="text"]#filter {
+    width: 50%;
   }
 }
