@@ -122,4 +122,10 @@ th {
   input[type="text"]#filter {
     width: 50%;
   }
+  table {
+    font-size: 10px;
+  }
+  button {
+    padding: 5px 8px;
+  }
 }
